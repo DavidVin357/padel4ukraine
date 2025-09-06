@@ -254,6 +254,11 @@ body {
   max-width: 400px;
 }
 
+.hero-cta {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
 /* About Section */
 .about {
   background: #ffea00;
@@ -404,6 +409,34 @@ body {
   font-size: 1.1rem;
   line-height: 1.7;
   color: #1a1a1a;
+}
+
+.step-cta {
+  margin-top: 1.5rem;
+}
+
+.step-button {
+  display: inline-block;
+  background: #ffea00;
+  color: #1a1a1a;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 900;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.step-button:hover {
+  background: white;
+  color: #1a1a1a;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .donation-grid {
@@ -1094,6 +1127,10 @@ body {
     padding: 0 1rem;
   }
 
+  .hero-cta {
+    margin-top: 0.5rem;
+  }
+
   .event-details {
     align-items: center;
     margin-top: 2rem;
@@ -1221,6 +1258,11 @@ body {
     text-align: center;
   }
 
+  .step-button {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
   .steps-container {
     width: 100%;
     max-width: 100%;
@@ -1343,6 +1385,11 @@ body {
     font-size: 1.1rem;
   }
 
+  .step-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
   /* Additional mobile fixes */
   .section-title {
     font-size: 2rem;
@@ -1379,6 +1426,10 @@ body {
   .hero-description {
     font-size: 1rem;
     padding: 0 0.5rem;
+  }
+
+  .hero-cta {
+    margin-bottom: 1.5rem;
   }
 
   .hero-content {
