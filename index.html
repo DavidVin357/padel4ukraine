@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="padel.ico" />
+    <title>Padel For Ukraine - Corporate Tournament in Tallinn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Oswald:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <div class="nav-logo">
+            <a
+              href="https://ukrainanimel.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="logo-link">
+              <img src="Logo.png" alt="Ukraine Nimel Logo" />
+              <div class="logo-text">
+                <span class="logo-title">Padel4Ukraine</span>
+                <span class="logo-caption">By Ukraina Nimel</span>
+              </div>
+            </a>
+          </div>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#who-we-are">Who We Are</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="nav-cta">
+            <a href="https://forms.gle/Rp9eiRRLphxCb9aj8" target="_blank" rel="noopener noreferrer" class="nav-button">Register Now</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="title-line">PADEL</span>
+              <span class="title-line">FOR</span>
+              <span class="title-line">UKRAINE</span>
+            </h1>
+            <div class="hero-subtitle">
+              <p class="hero-tagline">Let the living stay alive.</p>
+            </div>
+            <div class="event-details">
+              <div class="event-date">
+                <span class="date-label">DATE</span>
+                <span class="date-value">24.10.2025</span>
+              </div>
+              <div class="event-location">
+                <span class="location-label">LOCATION</span>
+                <span class="location-value">COOL PADEL, TALLINN</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-description">
+              <p>
+                A corporate padel tournament bringing Estonian companies
+                together to raise funds for evacuation buggies for the 93rd
+                Brigade of Ukraine.
+              </p>
+            </div>
+            <div class="buggy-container">
+              <img
+                src="buggy-car.png"
+                alt="Evacuation Buggy"
+                class="buggy-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-left">
+            <h2 class="section-title">ABOUT EVENT</h2>
+            <div class="about-buggy-container">
+              <img
+                src="padel2.png"
+                alt="Padel Sport"
+                class="about-buggy-image" />
+            </div>
+          </div>
+          <div class="about-right">
+            <h3 class="about-subtitle">THE GOAL</h3>
+            <p>
+              This charity padel tournament is dedicated to supporting the
+              <strong>93rd Brigade of Ukraine</strong>, whose story began in
+              2014 with the beginning of Russia's invasion of Ukraine.
+            </p>
+            <p>
+              All proceeds from this tournament will go toward purchasing
+              evacuation buggies for the 93rd Brigade — helping accelerate the
+              recovery and evacuation of wounded servicemen from the
+              battlefield.
+            </p>
+            <div class="fundraising-goal">
+              <span class="goal-label">FUNDRAISING GOAL</span>
+              <span class="goal-amount">€18,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="how-it-works-content">
+          <div class="how-it-works-left">
+            <h2 class="section-title">HOW IT WORKS</h2>
+            <div class="how-it-works-padel-container">
+              <img
+                src="padel.png"
+                alt="Padel Sport"
+                class="how-it-works-padel-image" />
+            </div>
+          </div>
+          <div class="how-it-works-right">
+            <div class="steps-container">
+              <div class="step-item">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                  <h3>Confirm your participation</h3>
+                  <p>
+                    Choose your 2 most passionate padel players and assemble a
+                    fan club of any size to support them.
+                  </p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                  <h3>MAKE A DONATION</h3>
+
+                    <div class="donation-grid">
+                      <div class="tier">
+                        <span class="tier-label"
+                          >Companies with 10+ employees
+                        </span>
+                        <span class="tier-amount">€1,000</span>
+                      </div>
+                      <div class="tier">
+                        <span class="tier-label"
+                          >Companies with &lt; 10 employees</span
+                        >
+                        <span class="tier-amount">€500</span>
+                      </div>
+                    </div>
+
+                  <div class="donation-details">
+                    <div class="donation-field">
+                      <span class="field-label">Recipient:</span>
+                      <span class="field-value" id="recipient">Ukraina Nimel MTÜ</span>
+                      <button class="copy-btn" onclick="copyToClipboard('recipient')" title="Copy to clipboard">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="donation-field">
+                      <span class="field-label">IBAN:</span>
+                      <span class="field-value" id="iban">EE044204278627579603</span>
+                      <button class="copy-btn" onclick="copyToClipboard('iban')" title="Copy to clipboard">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>                    
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                  <h3>JOIN THE TOURNAMENT</h3>
+                  <p>
+                    Compete in a day of intense padel matches while supporting a
+                    crucial cause for Ukraine.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="how-it-works-cta">
+        <a href="https://forms.gle/Rp9eiRRLphxCb9aj8" target="_blank" rel="noopener noreferrer" class="cta-button">REGISTER YOUR COMPANY</a>
+      </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="who-we-are" id="who-we-are">
+      <div class="container">
+        <div class="who-we-are-content">
+          <div class="who-we-are-left">
+            <h2 class="section-title">WHO WE ARE</h2>
+            <div class="team-photo">
+              <img
+                src="team.jpeg"
+                alt="Ukraina Nimel Team"
+                class="team-image" />
+              <div class="photo-caption">
+                <p>Waiting for you in Cool Padel!</p>
+              </div>
+            </div>
+          </div>
+          <div class="who-we-are-right">
+            <div class="organization-info">
+              <div class="org-description">
+                <h3>UKRAINA NIMEL MTÜ</h3>
+                <p>
+                  We are an Estonian nonprofit created by Ukrainians and
+                  Estonians to provide direct help to the brigades of Ukrainian
+                  Armed Forces. Our goal is to unite the support
+                  from Estonian citizens, residents, and expats who stand
+                  against the Russian invasion of Ukraine - and convert it into
+                  actionable help for Ukrainian soldiers.
+                </p>
+                <p>
+                  We believe it's most effective to PREVENT Ukrainian children
+                  from becoming orphans, families from becoming refugees, and
+                  civilians from dying or becoming disabled in the first place.
+                  And the only force able to stop this is the Armed Forces of
+                  Ukraine.
+                </p>
+                <div class="brigades-supported">
+                  <h4>BRIGADES WE SUPPORT</h4>
+                  <ul>
+                    <li>93rd Brigade "Kholodnyi Yar"</li>
+                    <li>10th Mountain Assault Brigade</li>
+                    <li>24th Separate Mechanized Brigade of King Daniel</li>
+                  </ul>
+                </div>
+                <div class="impact-stats">
+                  <div class="stat-item">
+                    <span class="stat-number blue">€140K</span>
+                    <span class="stat-label"
+                      >worth of help provided to Ukrainian defenders
+                    </span>
+                  </div>
+                </div>
+                <div class="website-cta">
+                  <a
+                    href="https://ukrainanimel.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="website-button">
+                    CHECK OUT Ukraina Nimel WEBSITE
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We're Raising For Section -->
+    <section class="raising-for">
+      <div class="container">
+        <h2 class="section-title">WHAT WE'RE RAISING FOR</h2>
+        <div class="raising-for-content">
+          <div class="raising-for-left">
+            <div class="raising-for-buggy-container">
+              <img
+                src="buggy.png"
+                alt="Evacuation Buggy"
+                class="raising-for-buggy-image" />
+            </div>
+            <div class="photo-caption">
+              <p style="color: #f5f5f5;">
+                The buggy we delivered last year, destroyed by Russian
+                drone in Summer 2025
+              </-p>
+            </div>
+          </div>
+          <div class="raising-for-right">
+            <div class="buggy-info">
+              <div class="buggy-details">
+                <h3>EVACUATION BUGGIES</h3>
+                <p>
+                  We're raising funds to purchase evacuation buggies
+                  for the <strong>93rd Brigade of Ukraine</strong>. These
+                  vehicles are crucial for safely evacuating wounded soldiers
+                  from the battlefield, providing immediate medical assistance
+                  and transport to field hospitals.
+                </p>
+                <p>
+                  Each buggy costs approximately €15,000 (plus delivery and
+                  additional expenses) and can save countless lives. Your
+                  company's participation directly contributes to this
+                  life-saving mission.
+                </p>
+                <div class="buggy-stats">
+                  <div class="stat">
+                    <span class="stat-number">€18,000</span>
+                    <span class="stat-label yellow">per buggy</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label yellow">lives saved</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Countdown Section -->
+    <section class="countdown">
+      <div class="container">
+        <h2 class="section-title">TOURNAMENT STARTS IN</h2>
+        <div class="countdown-timer">
+          <div class="countdown-item">
+            <span class="countdown-number" id="days">00</span>
+            <span class="countdown-label">DAYS</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="hours">00</span>
+            <span class="countdown-label">HOURS</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="minutes">00</span>
+            <span class="countdown-label">MINUTES</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="seconds">00</span>
+            <span class="countdown-label">SECONDS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tournament Details Section -->
+    <section class="tournament-details">
+      <div class="container">
+        <div class="tournament-content">
+          <div class="tournament-left">
+            <h2 class="section-title">TOURNAMENT DETAILS</h2>
+            <div class="tournament-padel-container">
+              <img
+                src="padel3.png"
+                alt="Padel Sport"
+                class="tournament-padel-image" />
+            </div>
+          </div>
+          <div class="tournament-right">
+            <div class="details-grid">
+              <div class="detail-item">
+                <h3>FORMAT</h3>
+                <p>
+                  Team Americano style with corporate teams competing in intense
+                  padel matches.
+                </p>
+              </div>
+              <div class="detail-item">
+                <h3>SCHEDULE</h3>
+                <p>
+                  Registration opens - <strong>12:00</strong> 
+                  Tournament starts - <strong>12:30</strong> 
+                  Awards ceremony - <strong>15:30</strong>
+                </p>
+              </div>
+              <div class="detail-item">
+                <h3>PRIZES</h3>
+                <p>
+                  Championship trophies, medals, and the honor of supporting
+                  Ukraine's defenders.
+                </p>
+              </div>
+              <div class="detail-item">
+                <h3>REFRESHMENTS</h3>
+                <p>
+                  Complimentary refreshments and networking opportunities
+                  throughout the day.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <h2 class="section-title">READY TO MAKE A DIFFERENCE?</h2>
+        <p class="cta-text">
+          Join us in supporting Ukraine while enjoying an exciting padel
+          tournament with your colleagues and competitors.
+        </p>
+        <a href="https://forms.gle/Rp9eiRRLphxCb9aj8" target="_blank" rel="noopener noreferrer" class="cta-button">REGISTER YOUR COMPANY</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">QUESTIONS?</h2>
+        <p class="contact-text">
+          Get in touch with our team for any inquiries about the tournament.
+        </p>
+        <div class="contact-info">
+          <div class="contact-email-container">
+            <span class="contact-email" id="contact-email">team@ukrainanimel.org</span>
+            <button class="copy-btn" onclick="copyToClipboard('contact-email')" title="Copy email to clipboard">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <img src="Logo.png" alt="Ukraine Nimel Logo" />
+        </div>
+        <p>&copy; 2025 Ukraina Nimel. All rights reserved.</p>
+        <div class="footer-attribution">
+          <a href="https://www.flaticon.com/free-icons/padel" title="padel icons">Padel icons created by Freepik - Flaticon</a>
+        </div>
+      </div>
+      <!-- </div> -->
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
