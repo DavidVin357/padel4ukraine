@@ -226,6 +226,14 @@ body {
   color: white;
 }
 
+.time-value {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  margin-left: 0.8rem;
+}
+
 .hero-visual {
   display: flex;
   flex-direction: column;
@@ -239,17 +247,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 3rem;
 }
 
 .buggy-image {
-  width: 100%;
+  width: 130%;
   height: auto;
   filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.3));
 }
 
 .hero-description {
   text-align: center;
-  font-size: 1.3rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6rem;
   line-height: 1.6;
   max-width: 400px;
 }
@@ -882,14 +892,18 @@ body {
 .details-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .detail-item {
   padding: 2rem;
   background: #f8f9fa;
-  border-radius: 15px;
+  border-radius: 20px;
   border-left: 4px solid #0000cc;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .detail-item h3 {
@@ -903,7 +917,6 @@ body {
 
 .detail-item p {
   font-size: 1rem;
-  line-height: 1.6;
   color: #1a1a1a;
 }
 
@@ -1072,7 +1085,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 886px) {
   .container {
     padding: 0 15px;
     max-width: 100%;
@@ -1131,10 +1144,19 @@ body {
     margin-top: 0.5rem;
   }
 
+  .buggy-container {
+    margin-top: 0;
+  }
+
   .event-details {
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
     margin-top: 2rem;
     padding: 0 1rem;
+    flex-wrap: wrap;
   }
 
   .event-date,
@@ -1145,7 +1167,8 @@ body {
     border-radius: 15px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    width: 100%;
+    flex: 1;
+    min-width: 200px;
     max-width: 300px;
   }
 
@@ -1413,13 +1436,21 @@ body {
   }
 
   .event-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
     margin-top: 1.5rem;
     padding: 0 0.5rem;
+    flex-wrap: wrap;
   }
 
   .event-date,
   .event-location {
     padding: 0.8rem;
+    flex: 1;
+    min-width: 150px;
     max-width: 280px;
   }
 
