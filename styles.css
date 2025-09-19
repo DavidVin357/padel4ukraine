@@ -558,6 +558,35 @@ body {
   height: 16px;
 }
 
+/* Tax Incentive Info Styles */
+.tax-incentive-info {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: #f0f8ff;
+  border-radius: 8px;
+  border-left: 3px solid #0000cc;
+  border: 1px solid #e3f2fd;
+}
+
+.tax-incentive-info p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #666;
+  margin: 0;
+}
+
+.tax-incentive-info a {
+  color: #0000cc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.tax-incentive-info a:hover {
+  color: #000099;
+  text-decoration: underline;
+}
+
 .how-it-works-cta {
   text-align: center;
   margin-top: 3rem;
